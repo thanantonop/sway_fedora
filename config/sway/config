@@ -31,7 +31,7 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
-output * bg /usr/share/backgrounds/default.png fill
+output * bg /usr/share/backgrounds/default-dark.png fill
 #
 # Example configuration:
 #
@@ -265,8 +265,8 @@ font pango:Roboto 10
 # set gtk-theme, icons and cursors
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
-	gsettings set $gnome-schema gtk-theme 'Yaru-blue'
-	gsettings set $gnome-schema icon-theme 'Yaru-blue'
+	gsettings set $gnome-schema gtk-theme 'Yaru-blue-dark'
+	gsettings set $gnome-schema icon-theme 'Yaru-blue-dark'
 #	gsettings set $schema gtk-application-prefer-dark-theme true
 	gsettings set org.gnome.desktop.interface font-name 'Roboto 10'
 	gsettings set org.gnome.desktop.interface monospace-font-name 'MesloLGS Nerd Font Mono 10'
