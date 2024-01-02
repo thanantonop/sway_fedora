@@ -79,7 +79,7 @@ listview {
     border-radius: 0px 0px 6px 6px;
     border-color: @nord0;
     border: 0px 2px 2px 2px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.9);
     dynamic: false;
 }
 
@@ -93,7 +93,7 @@ element {
 }
 
 element selected.normal {
-	background-color: @nord7;
+	background-color: #90958f;
 	text-color: #2e3440;
 }
 

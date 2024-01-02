@@ -245,7 +245,7 @@ titlebar_border_thickness 0
 
 # window color settings
 # class                 border  backgr. text    indicator
-#client.focused          #81a1c1 #81a1c1 #ffffff #81a1c1
+#client.focused          #67605c #67605c #ffffff #67605c
 #client.unfocused        #2e3440 #1f222d #888888 #1f222d
 #client.focused_inactive #2e3440 #1f222d #888888 #1f222d
 #client.placeholder      #2e3440 #1f222d #888888 #1f222d
@@ -267,7 +267,6 @@ set $gnome-schema org.gnome.desktop.interface
 exec_always {
 	gsettings set $gnome-schema gtk-theme 'Yaru-blue-dark'
 	gsettings set $gnome-schema icon-theme 'Yaru-blue-dark'
-#	gsettings set $schema gtk-application-prefer-dark-theme true
 	gsettings set org.gnome.desktop.interface font-name 'Roboto 10'
 	gsettings set org.gnome.desktop.interface monospace-font-name 'MesloLGS Nerd Font Mono 10'
 	gsettings set org.gnome.desktop.interface document-font-name 'Roboto 10'
