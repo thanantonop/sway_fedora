@@ -31,7 +31,7 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
-output * bg /usr/share/backgrounds/default-dark.png fill
+output * bg /usr/share/backgrounds/default.png fill
 #
 # Example configuration:
 #
@@ -243,6 +243,9 @@ default_floating_border pixel 2
 titlebar_padding 1
 titlebar_border_thickness 0
 
+# thin borders
+smart_borders on
+
 # window color settings
 # class                 border  backgr. text    indicator
 #client.focused          #67605c #67605c #ffffff #67605c
@@ -252,6 +255,12 @@ titlebar_border_thickness 0
 #client.urgent           #900000 #900000 #ffffff #900000
 
 #client.background       #242424
+
+# add transparency to the inactive windows
+#exec --no-startup-id python ~/.config/sway/scripts/inactive-windows-transparency.py --opacity 0.85
+
+# set floating (nontiling) for apps needing it
+for_window [app_id="galculator"] floating enable
 
 # configure multiple keyboard layouts and hotkey to switch (Alt+SHIFT in this example)
 input type:keyboard {
@@ -265,8 +274,8 @@ font pango:Roboto 10
 # set gtk-theme, icons and cursors
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
-	gsettings set $gnome-schema gtk-theme 'Yaru-blue-dark'
-	gsettings set $gnome-schema icon-theme 'Yaru-blue-dark'
+	gsettings set $gnome-schema gtk-theme 'Yaru-blue'
+	gsettings set $gnome-schema icon-theme 'Yaru-blue'
 	gsettings set org.gnome.desktop.interface font-name 'Roboto 10'
 	gsettings set org.gnome.desktop.interface monospace-font-name 'MesloLGS Nerd Font Mono 10'
 	gsettings set org.gnome.desktop.interface document-font-name 'Roboto 10'

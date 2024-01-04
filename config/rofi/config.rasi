@@ -1,7 +1,7 @@
 configuration {
     font: "Roboto Medium 12";
     line-margin: 10;
-    icon-theme: "Yaru-blue-dark";
+    icon-theme: "Yaru-blue";
     display-ssh:    "  ";
     display-run:    "  ";
     display-drun:   "  ";
@@ -20,4 +20,8 @@ listview {
 
 window {
 	width: 40%;
+}
+
+element-icon {
+  size: 32px;
 }

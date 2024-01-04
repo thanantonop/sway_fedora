@@ -2,14 +2,14 @@
     /* `otf-font-awesome` is required to be installed for icons */
     border: none;
     border-radius: 4px;
-    font-family: FontAwesome, Roboto Medium, Helvetica, Arial, sans-serif;
+    font-family: FontAwesome, Roboto Black, Helvetica, Arial, sans-serif;
     font-size: 13px;
     min-height: 0;
 }
 
 window#waybar {
     background-color: rgba(0, 0, 0, 0.7);
-    border-bottom: 2px solid rgba(100, 114, 125, 0.3); 
+    border-bottom: 0px solid rgba(100, 114, 125, 0.3); 
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
